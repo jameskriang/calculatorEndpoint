@@ -17,7 +17,7 @@ REST API endpoint for simple mathematics calculation written in NodeJS.
 ```console
   npm start
 ```
-  4. To test script is located inside *test* folder, to run the test use the following command,
+  4. The test script is located inside *test* folder, to run the test use the following command,
   
 ```console
   npm test
