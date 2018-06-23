@@ -22,4 +22,4 @@ REST API endpoint for simple mathematics calculation written in NodeJS.
 ```console
   npm test
 ```
-  5. Or through your browser at localhost port 5000.
+  5. Or test manually through your browser at localhost port 5000.
