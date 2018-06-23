@@ -2,15 +2,6 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  // try{
-  //   if(req.originalUrl.slice(22)[0].match(/[^0-9]/) || req.originalUrl[req.originalUrl.length-1].match(/[^0-9]/)){
-  //     res.render('calculator', {value: '"Incorrect input"'});
-  //     return;
-  //   }
-  // }catch(e){
-  //   res.render('calculator', {value: '"Incorrect input"'});
-  //   return;
-  // }
   var resultArrays = queryToArrayParser(req.originalUrl.slice(22));
   var numberArr = resultArrays[0];
   var signArr = resultArrays[1];
@@ -18,7 +9,6 @@ router.get('/', function(req, res, next) {
     var result = calculate(numberArr,signArr);
     // res.render('calculation', { value: result});
     res.status(200).send(result.toString());
-    console.log(req.body);
   }catch(e){
     console.log(e);
     res.status(500).send("something bad happened");
