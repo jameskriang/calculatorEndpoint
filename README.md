@@ -7,7 +7,7 @@ REST API endpoint for simple mathematics calculation written in NodeJS.
   
 ## How to run
   1. Download the source code
-  2. Open up your OS CLI, go to the *downloaded direct* and run the following command,
+  2. Open up your OS CLI, go to the *downloaded directory* and run the following command,
  
 ```console
   npm install
