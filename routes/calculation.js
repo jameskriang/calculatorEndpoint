@@ -36,6 +36,7 @@ function calculate(numberArr,signArr){
             result += val2;
           }catch(e){
             console.log(e);
+            return e.message;
           }
           break;
         case '-':
@@ -43,6 +44,7 @@ function calculate(numberArr,signArr){
             result -= val2;
           }catch(e){
             console.log(e);
+            return e.message;
           }
           break;
         case '*':
@@ -50,6 +52,7 @@ function calculate(numberArr,signArr){
             result =  result * val2;
           }catch(e){
             console.log(e);
+            return e.message;
           }
           break;
         case '/':
@@ -57,6 +60,7 @@ function calculate(numberArr,signArr){
             result =  result/val2;
           }catch(e){
             console.log(e);
+            return e.message;
           }
           break;
         default:
